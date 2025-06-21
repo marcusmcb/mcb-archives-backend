@@ -6,8 +6,8 @@ A FastAPI backend for serving archived radio shows for the MCB Archives project.
 
 1. Create and activate a Python virtual environment:
    ```bash
-   python -m venv venv
-   source venv/Scripts/activate  # On Windows (bash)
+   python -m venv mcb-archives-backend
+   source mcb-archives-backend/Scripts/activate  # On Windows (bash)
    ```
 2. Install dependencies:
    ```bash
