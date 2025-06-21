@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
-from database import init_db, SessionLocal
-from models import RadioShow
-from schemas import RadioShowCreate, RadioShowOut
+from .database import init_db, SessionLocal
+from .models import RadioShow
+from .schemas import RadioShowCreate, RadioShowOut
 from typing import List
 
 app = FastAPI()

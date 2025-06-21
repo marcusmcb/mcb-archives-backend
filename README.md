@@ -25,17 +25,25 @@ A FastAPI backend for serving archived radio shows for the MCB Archives project.
      ```
 4. Run the development server:
    ```bash
-   uvicorn main:app --reload
+   uvicorn app.main:app --reload
    ```
 
 ## Environment Variables
 - `DATABASE_URL`: The PostgreSQL database connection string
 
 ## Project Structure
-- `main.py` — FastAPI app entry point
-- `models.py` — SQLAlchemy data models
-- `schemas.py` — Pydantic schemas for API
-- `database.py` — Database connection and session
-- `.gitignore` — Files and folders to exclude from git
-- `README.md` — Project info and setup instructions
-- `requirements.txt` — Python dependencies
+```
+mcb-archives-backend/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py         # FastAPI app instance and routes
+│   ├── models.py       # SQLAlchemy models
+│   ├── schemas.py      # Pydantic schemas
+│   └── database.py     # DB connection/session
+│
+├── .env
+├── requirements.txt
+├── README.md
+├── .gitignore
+```
